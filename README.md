@@ -30,6 +30,23 @@ FlowCash es una aplicación móvil enfocada en personas que reciben ingresos dia
 
 ## Cómo ejecutar el proyecto
 
+### Requisitos previos
+
+Asegúrate de tener instalado:
+
+- Flutter SDK (3.x o superior)
+- Dart SDK (incluido con Flutter)
+- Android Studio o Xcode (para emuladores)
+- VS Code o Android Studio con la extensión de Flutter
+
+Verifica la instalación con:
+
+```bash
+flutter doctor
+```
+
+Todos los apartados deben aparecer sin errores críticos antes de continuar.
+
 ### 1. Clonar el repositorio
 
 ```bash
@@ -37,31 +54,55 @@ git clone https://github.com/usuario/flowcash.git
 cd flowcash
 ```
 
-### 2. Instalar dependencias
+### 2. Instalar las dependencias
+
+Flutter descarga automáticamente las dependencias definidas en `pubspec.yaml`.
 
 ```bash
-npm install
+flutter pub get
 ```
 
-### 3. Configurar variables de entorno
+### 3. Configurar variables de entorno (si aplica)
 
-Crear un archivo `.env.local` con las credenciales de Supabase.
+Si el proyecto utiliza Supabase, crea un archivo `.env` (o el método de configuración definido en el proyecto) con las credenciales correspondientes.
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=tu_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_key
+SUPABASE_URL=tu_url
+SUPABASE_ANON_KEY=tu_key
 ```
 
-### 4. Ejecutar en desarrollo
+### 4. Ejecutar la aplicación
+
+Comprueba que haya un dispositivo o emulador disponible:
 
 ```bash
-npm run dev
+flutter devices
 ```
 
-Abrir:
+Luego inicia la aplicación:
 
+```bash
+flutter run
 ```
-http://localhost:3000
+
+### Compilar para producción
+
+Android (APK):
+
+```bash
+flutter build apk
+```
+
+Android (App Bundle):
+
+```bash
+flutter build appbundle
+```
+
+iOS (macOS):
+
+```bash
+flutter build ios
 ```
 
 ---
