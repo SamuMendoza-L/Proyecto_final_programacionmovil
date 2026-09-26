@@ -10,7 +10,8 @@ FlowCash es una aplicación móvil enfocada en personas que reciben ingresos dia
 
 | Nombre | Rol |
 |---------|-----|
-| Samuel Mendoza | Product Owner / Desarrollo |
+| Samuel Mendoza | Desarrollo |
+| Maria Jose Martinez | Desarrollo |
 
 > Agrega aquí los demás integrantes si el proyecto es grupal.
 
