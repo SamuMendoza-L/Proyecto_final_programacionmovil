@@ -115,7 +115,10 @@ class ProfileScreen extends StatelessWidget {
                 width: double.infinity,
                 height: 58,
                 child: ElevatedButton(
-                  onPressed: () => Navigator.pop(context),
+                  onPressed: () {
+                    Navigator.pop(context);
+                    Navigator.pop(context);
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF4A242C),
                     foregroundColor: const Color(0xFFFFB4AB),
