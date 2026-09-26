@@ -125,23 +125,33 @@ flowcash/
 
 ## Capturas del proyecto
 
-> Las imágenes se agregarán conforme avance el desarrollo.
+### P-01 · Inicio de sesión
 
-### Pantalla de inicio
+![Inicio de sesión](docs/mockups/p_01_login/screen.png)
 
-![Inicio](public/screenshots/home.png)
+### P-02 · Dashboard
 
-### Dashboard
+![Dashboard](docs/mockups/p_02_dashboard/screen.png)
 
-![Dashboard](public/screenshots/dashboard.png)
+### P-03 · Registrar ingreso
 
-### Agregar ingreso
+![Registrar ingreso](docs/mockups/p_03_add_income/screen.png)
 
-![Ingreso](public/screenshots/add-income.png)
+### P-04 · Registrar gasto
 
-### Deudas
+![Registrar gasto](docs/mockups/p_04_add_expense/screen.png)
 
-![Deudas](public/screenshots/debts.png)
+### P-05 · Lista de deudas
+
+![Lista de deudas](docs/mockups/p_05_debt_list/screen.png)
+
+### P-06 · Detalle de deuda
+
+![Detalle de deuda](docs/mockups/p_06_debt_detail/screen.png)
+
+### P-07 · Perfil
+
+![Perfil](docs/mockups/p_07_profile/screen.png)
 
 ---
 
