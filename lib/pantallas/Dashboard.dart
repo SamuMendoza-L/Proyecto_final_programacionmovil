@@ -314,31 +314,34 @@ class DashboardScreen extends StatelessWidget {
           height: 110,
           alignment: Alignment.center,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              const SizedBox(height: 12),
-              Row(
-                children: [
-                  const Expanded(child: SizedBox()),
-                  if (aviso != null)
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 6,
-                        vertical: 3,
-                      ),
-                      decoration: BoxDecoration(
-                        color: const Color(0xFFB00020),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Text(
-                        aviso,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 9,
+              SizedBox(
+                height: 18,
+                child: Row(
+                  children: [
+                    const Expanded(child: SizedBox()),
+                    if (aviso != null)
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 6,
+                          vertical: 3,
+                        ),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFB00020),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Text(
+                          aviso,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 9,
+                          ),
                         ),
                       ),
-                    ),
-                  const SizedBox(width: 6),
-                ],
+                    const SizedBox(width: 6),
+                  ],
+                ),
               ),
               Container(
                 width: 40,
@@ -350,7 +353,6 @@ class DashboardScreen extends StatelessWidget {
                 ),
                 child: Icon(icono, color: colorIcono),
               ),
-              const SizedBox(height: 8),
               Text(
                 titulo,
                 textAlign: TextAlign.center,

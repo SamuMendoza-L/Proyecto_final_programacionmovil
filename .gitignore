@@ -49,3 +49,5 @@ app.*.map.json
 
 # Private local files (do not upload)
 private/
+FixError/
+

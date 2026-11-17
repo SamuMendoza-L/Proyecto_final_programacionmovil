@@ -129,18 +129,30 @@ class _RecordIncomeScreenState extends State<RecordIncomeScreen> {
                       ],
                     ),
                     const SizedBox(height: 22),
-                    const Row(
+                    Row(
                       children: [
-                        Text(
-                          'Saldo disponible estimado',
-                          style: TextStyle(color: secundario, fontSize: 15),
+                        const Expanded(
+                          child: FittedBox(
+                            alignment: Alignment.centerLeft,
+                            fit: BoxFit.scaleDown,
+                            child: Text(
+                              'Saldo disponible estimado',
+                              style: TextStyle(color: secundario, fontSize: 15),
+                            ),
+                          ),
                         ),
-                        Expanded(child: SizedBox()),
-                        Text(
-                          'Disponible al instante',
-                          style: TextStyle(
-                            color: Color(0xFF6BFCBB),
-                            fontSize: 15,
+                        const SizedBox(width: 8),
+                        const Expanded(
+                          child: FittedBox(
+                            alignment: Alignment.centerRight,
+                            fit: BoxFit.scaleDown,
+                            child: Text(
+                              'Disponible al instante',
+                              style: TextStyle(
+                                color: Color(0xFF6BFCBB),
+                                fontSize: 15,
+                              ),
+                            ),
                           ),
                         ),
                       ],
